@@ -1,0 +1,160 @@
+.catalog
+    padding-bottom: 130px 
+    min-height:  1300px
+    &_tabs
+        margin-top: 68px 
+        list-style-type: none
+        display: flex
+        justify-content: center 
+        margin-bottom: 42px 
+    &_tab
+        margin: 0 7px 0 7px
+        cursor: pointer
+        line-height: 45px
+        text-align: center
+        width: 221px
+        height: 51px
+        background-color: #ffffff
+        transform: skewX(-25deg) 
+        border: 2px solid  #919993 
+        color: #6B6B6B
+        transition: 0.2s all
+        &_content
+            transform: skewX(25deg)
+            font-size: 18px
+            font-weight: 400
+            text-transform: uppercase 
+        &_active
+            background-color: $main-color
+            color: #ffffff
+            border: none
+        &:hover
+            box-shadow: 5px 5px 25px $main-color
+    &_wrap
+        display: flex
+        width: calc(200% + 40px)
+    &_content
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        display: none
+        &_active
+                display: flex
+        &_item
+            margin-right: 7px
+            margin-left: 7px
+            padding: 17px 20px 23px 22px  
+            width: 301px
+            height: 451px 
+            border: 2px solid #919993 
+            border-radius: 2px
+            margin-top: 19px
+            overflow: hidden
+            transition: 0.5s all
+            &_img
+                display: block
+                height: 200px 
+                margin: 0 auto 
+            &_descr
+                color: #0D0D0D
+                text-align: center
+                font-size: 14px
+                font-weight: 300
+                margin-top: 14px
+            &_subheader
+                font-size: 16px
+                text-align: center
+                font-weight: 700
+                color: #0D0D0D
+                margin-top: 15px
+            &_link
+                display: block
+                color: $main-color
+                text-decoration: underline
+                font-size: 14px
+                text-align: center
+                font-weight: 500
+                margin-top: 17px
+                &:hover
+                    color: $main-color
+            hr
+                border-bottom: 0
+                margin-top: 18px
+                margin-bottom: 17px 
+            &_wrap
+                display: flex
+                justify-content: space-between
+                align-items: center
+            &_old
+                text-decoration: line-through
+                font-size: 14px
+                color: #555555
+            &_current
+                font-size: 20px
+                color: #050505
+                font-weight: 700
+            &_list
+                width: 50%
+                margin-left: 20px
+                transform: translateX(0)
+                position: relative
+                list-style-type: none
+                position: relative
+                padding: 0 22px 0 28px
+                transition: 0.5s all
+                li
+                    position: relative
+                    color: #555555
+                    font-size: 14px
+                    font-weight: 300
+                    margin-bottom: 15px
+                    line-height: 17px
+                    &::before
+                        content: ''
+                        position: absolute
+                        width: 6px
+                        height: 6px
+                        border-radius: 2px
+                        background-color: $main-color
+                        top: 7px
+                        left: -25px
+                        margin-bottom: 60px
+                &_active
+                    margin-left: 0
+                    transform: translateX(-100%)
+                &_back
+                    display: block
+                    color: $main-color
+                    text-decoration: underline
+                    font-size: 14px
+                    font-weight: 500
+                    position: absolute
+                    bottom: 72px
+                    left: 50%
+                    transform: translateX(-70%)
+                    &:hover
+                        color: $main-color
+                &_wrap
+                    border-top: 1px solid #919993
+                    padding-top: 16px
+                    width: 260px
+                    display: flex
+                    justify-content: space-between
+                    position: absolute
+                    bottom: -15px
+                    left: -5px
+                    align-items: center
+    
+
+            &_main
+                width: 50%
+                margin-right: 0px
+                transform: translateX(calc( -100% - 24px ))
+                transition: 0.5s all
+                &_active
+                    transform: translateX(0%)
+                    margin-right: 20px
+            
+
+            
