@@ -22,7 +22,7 @@
                     </div>
                     <div class="header_contact">
                         <a href="mob:+74999228974" class="header_number">+7 (499) 922-89-74</a>
-                        <button class="button">заказать звонок</button>
+                        <button class="button" data-modal="consultation">заказать звонок</button>
                     </div>
 
             </header>
@@ -46,7 +46,7 @@
                     </div>
 
                 </div>
-                <button class="button button_l promo_btn">заказать кОНСУЛЬТАЦИЮ</button>
+                <button class="button button_l promo_btn" data-modal="consultation">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo_alternative">или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></div> 
             </div>
         </div>
@@ -91,9 +91,9 @@
                 и мы перезвоним вам в течении 10 минут</div>
 
             <form action="#" class="form">
-                <input name="name" type="text" placeholder="Ваше имя">
-                <input name="tel" type="number" placeholder="Ваш телефон">
-                <input name="mail" type="email" placeholder="Ваш E-mail">
+                <input name="name" required type="text" placeholder="Ваше имя">
+                <input name="tel" required type="number" placeholder="Ваш телефон">
+                <input name="mail" required type="email" placeholder="Ваш E-mail">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -127,7 +127,7 @@
 
                             <div class="catalog_content_item_main catalog_content_item_main_active">
                                 <img src="images/product.png" alt="product" class="catalog_content_item_img">
-                                <div class="catalog_content_item_subheader">Пульсометр Polar FT1</div>
+                                <div class="catalog_content_item_subheader">Пульсометр httth FT1</div>
                                 <div class="catalog_content_item_descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                                 <a href="" class="catalog_content_item_link">ПОДРОБНЕЕ</a>
                                 <hr>
@@ -556,6 +556,47 @@
         </div> 
 
     </footer>
+
+    <div class="modals">
+        <div class="overlay">
+            <div class="modal" id="consultation">
+                <div class="modal_closer">&times;</div>
+                <div class="modal_subheader">Просто заполните форму заявки</div>
+                <div class="modal_descr">и мы перезвоним вам в течении 10 минут</div>
+
+                <form action="#" class="form form_mt20">
+                    <input name="name" type="text" placeholder="Ваше имя">
+                    <input name="tel" type="number" placeholder="Ваш телефон">
+                    <input name="mail" type="email" placeholder="Ваш E-mail">
+    
+                    <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+                </form>
+
+            </div>
+
+            <div class="modal" id="order">
+                <div class="modal_closer">&times;</div>
+                <div class="modal_subheader">Ваш заказ:</div>
+                <div class="modal_descr">Пульсометр Polar FT1</div>
+
+                <form action="#" class="form form_mt20">
+                    <input name="name" required type="text" placeholder="Ваше имя">
+                    <input name="tel" required type="number" placeholder="Ваш телефон">
+                    <input name="mail" required type="email" placeholder="Ваш E-mail">
+    
+                    <button class="button button_submit">КУПИТЬ</button>
+                </form>
+
+            </div>
+
+            <div class="modal modal_mini" id="tnx">
+                <div class="modal_closer">&times;</div>
+                <div class="modal_subheader">Спасибо за вашу заявку!</div>
+                <div class="modal_descr">Наш менеджер свяжется с вами 
+                    в ближайшее время!</div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
