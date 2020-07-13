@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;500;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://img.icons8.com/dusk/64/000000/globe-earth.png" type="image/x-icon">
     <!-- <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon"> -->
-    <title>Pulse</title> 
+    <title>Pulsometers</title> 
 </head>
 <body>
     <div class="promo">
@@ -90,10 +91,10 @@
             <div class="consultation_text">Просто заполните форму заявки<br> 
                 и мы перезвоним вам в течении 10 минут</div>
 
-            <form action="#" class="form">
-                <input name="name" required type="text" placeholder="Ваше имя">
-                <input name="tel" required type="number" placeholder="Ваш телефон">
-                <input name="mail" required type="email" placeholder="Ваш E-mail">
+            <form action="#" class="form" id="consultation_form">
+                <input name="name"  type="text" placeholder="Ваше имя">
+                <input name="tel" placeholder="Ваш телефон">
+                <input name="mail" placeholder="Ваш E-mail">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -566,8 +567,8 @@
 
                 <form action="#" class="form form_mt20">
                     <input name="name" type="text" placeholder="Ваше имя">
-                    <input name="tel" type="number" placeholder="Ваш телефон">
-                    <input name="mail" type="email" placeholder="Ваш E-mail">
+                    <input name="tel" placeholder="Ваш телефон">
+                    <input name="mail" placeholder="Ваш E-mail">
     
                     <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
                 </form>
@@ -580,9 +581,9 @@
                 <div class="modal_descr">Пульсометр Polar FT1</div>
 
                 <form action="#" class="form form_mt20">
-                    <input name="name" required type="text" placeholder="Ваше имя">
-                    <input name="tel" required type="number" placeholder="Ваш телефон">
-                    <input name="mail" required type="email" placeholder="Ваш E-mail">
+                    <input name="name"  type="text" placeholder="Ваше имя">
+                    <input name="tel" placeholder="Ваш телефон">
+                    <input name="mail"  placeholder="Ваш E-mail">
     
                     <button class="button button_submit">КУПИТЬ</button>
                 </form>
@@ -600,7 +601,9 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 
 

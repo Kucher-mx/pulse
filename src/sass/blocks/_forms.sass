@@ -1,5 +1,6 @@
 .form
     display: flex
+    width: 300px
     flex-direction: column
     input
         margin-top: 14px
@@ -9,13 +10,27 @@
         border: none
         border-radius: 4px 
         color: #4B4B4B
-        font-size: 14px
-        font-weight: 300
+        font-size: 16px
+        font-weight: 500
     button
-        margin-top: 20px 
+        margin-top: 20px
+    .error
+        border: 2px solid red
+    label.error 
+        font-size: 14px
+        border: none 
+        margin-top: 15px
+        text-align: center
+        padding: 0 5px
     &_mt20
         margin-top: 20px
         input
-            border: .5px solid #000000 
+            border: 1px solid #000000 
+        
+#consultation_form 
+    label.error
+        color: #ffffff
+        padding: 0 5px
+
             
             
