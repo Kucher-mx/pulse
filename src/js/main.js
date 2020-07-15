@@ -123,4 +123,8 @@ $(document).ready(function(){
 
   });
 
+  //WOW js init
+
+  //new WOW().init(); 
+
 });
