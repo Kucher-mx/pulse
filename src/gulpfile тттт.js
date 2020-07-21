@@ -13,7 +13,7 @@ gulp.task('server', function() {
         server: {baseDir: '../dist'} 
     });
 
-    gulp.watch("../dist/*.html").on('change', browserSync.reload);
+    gulp.watch("../src/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {
